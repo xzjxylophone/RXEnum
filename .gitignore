@@ -21,6 +21,11 @@ xcuserdata/
 *.moved-aside
 *.xcuserstate
 
+Podfile.lock
+Pods
+.DS_Store
+
+
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
