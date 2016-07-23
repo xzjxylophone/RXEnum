@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  RXEnumExample
+//  RXEnumDemo
 //
-//  Created by ceshi on 16/7/22.
+//  Created by ceshi on 16/7/23.
 //  Copyright © 2016年 Rush. All rights reserved.
 //
 
@@ -15,42 +15,8 @@
 @end
 
 @implementation AppDelegate
-
-
-- (void)config
-{
-    //    [UIViewController aspect_hookSelector:@selector(viewDidLoad) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> info) {
-    //        NSLog(@"viewDidLoad:%@", info.instance);
-    //    } error:NULL];
-    //
-    //    [UIViewController aspect_hookSelector:@selector(viewWillAppear:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> info, BOOL animation) {
-    //        NSLog(@"viewWillAppear:%@", info.instance);
-    //    } error:NULL];
-    //
-    //
-    //
-    //
-    //    [UIViewController aspect_hookSelector:@selector(viewDidAppear:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> info, BOOL animation) {
-    //        NSLog(@"viewDidAppear:%@", info.instance);
-    //    } error:NULL];
-    //
-    //
-    //
-    //    [UIViewController aspect_hookSelector:@selector(viewWillDisappear:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> info, BOOL animation) {
-    //        NSLog(@"viewWillDisappear:%@", info.instance);
-    //    } error:NULL];
-    //
-    //
-    //
-    
-    
-    
-    
-}
-
 - (void)showMain
 {
-    
     UIViewController *vc = nil;
     vc = [[MainViewController alloc] init];
     self.mainNC = [[UINavigationController alloc] initWithRootViewController:vc];
@@ -61,16 +27,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    [self config];
     [self showMain];
     [self.window makeKeyAndVisible];
-    
-    
-    
-    //    CFRunLoopRef runLoopRef = CFRunLoopGetMain();
-    //    NSLog(@"%@", runLoopRef);
-    
-    
     return YES;
 }
 - (void)applicationWillResignActive:(UIApplication *)application {
