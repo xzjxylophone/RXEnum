@@ -8,6 +8,20 @@
 
 #import "MainViewController.h"
 
+
+
+typedef NS_ENUM(NSInteger, E_RX_Type) {
+    kE_RX_Type_1        =       0,
+    kE_RX_Type_2,
+    kE_RX_Type_3,
+};
+
+typedef NS_ENUM(NSInteger, E_RX_Style) {
+    kE_RX_Style_1,
+    kE_RX_Style_2,
+    kE_RX_Style_3,
+};
+
 @interface MainViewController ()
 
 @end
